@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[dutch]{babel}               % Voor nederlandstalige hyphenatie (woordsplitsing)
+\uselanguage{dutch}
+\languagepath{dutch}
+\usepackage{url}                        % Om url's te verwerken
+\usepackage{graphicx,subfigure}         % Om figuren te kunnen verwerken
+\usepackage[utf8]{inputenc}             % Om niet ascii karakters rechtstreeks te kunnen typen
+\usepackage{multicol}
+\usepackage[absolute,overlay]{textpos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetheme{Frankfurt}
+\usefonttheme[onlymath]{serif}
+\setbeamertemplate{footline}[page number]
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Inhoud}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Inleiding tot Inkscape}
+\author{Brecht Baeten\inst{1}}
+\institute{
+	\inst{1}%
+  		e-mail: brecht.baeten@gmail.com
+}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Omgevingen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
