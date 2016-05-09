@@ -21,12 +21,12 @@
 		\vspace{0.5cm}
 		\begin{columns}
 			\begin{column}[T]{0.5\textwidth}
-				\includegraphics[width=\textwidth]{fig/inkscape_logo_zoombox_png}
+				\includegraphics[width=\textwidth]{fig/logo_zoom_png}
 				\vspace{0.5cm}
 				.bmp, .png, .jpg,...
 			\end{column}
 			\begin{column}[T]{0.5\textwidth}
-				\includegraphics[width=\textwidth]{fig/inkscape_logo_zoombox_pdf}
+				\includegraphics[width=\textwidth]{fig/logo_zoom_pdf}
 				\vspace{0.5cm}
 				.svg, .eps, .cdr, .ai, .pdf,...
 			\end{column}
@@ -39,6 +39,7 @@
 			\item .svg
 			\item W3C norm (zoals html, css, xml,...)
 			\item "leesbare" bestanden
+			\item "definitie" van de tekening
 		\end{itemize}
 		\vspace{0.5cm}
 		\begin{center}
@@ -48,24 +49,87 @@
 		\end{center}	
 	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Inkscape}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Werkbalken}
+		\begin{center}
+			\includegraphics[height=0.85\textheight]{fig/inkscape_werkbalken}\\
+		\end{center}	
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Objecten en Paden}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
 		\frametitle{Objecten}
 		\begin{columns}
-			\begin{column}[T]{0.7\textwidth}
+			\begin{column}[T]{0.5\textwidth}
 				\begin{itemize}
 					\item Rechthoek
 					\item 3D doos
 					\item Cirkel
 					\item Veelhoek / ster
 					\item Spiraal
+					\item Tekst
 				\end{itemize}
 			\end{column}
-			\begin{column}[T]{0.2\textwidth}
-				\includegraphics[height=0.8\textheight]{fig/objecten}\\
+			\begin{column}[T]{0.5\textwidth}
+				\includegraphics[height=0.8\textheight]{fig/inkscape_objecten}
 			\end{column}
 		\end{columns}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Objecten en kleuren}
+		\only<1>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/objecten_en_kleuren}
+			\end{center}
+		}
+		\only<2>{
+			\begin{itemize}
+				\item Vulling en lijn pallet openen via \emph{Object $>$ Vulling en lijn...}\\
+				 of \textbf{Ctrl} + \textbf{Shift} + F\\
+				 of dubbelklikken op vulling en lijn detail (links onderaan)
+				\item Vulling, Lijnkleur, Lijnstijl
+			\end{itemize}
+			
+			\vspace{0.5cm}
+			\textbf{Extra's:}
+			\begin{itemize}
+				\item kleurenpallet klik = vulling kleur
+				\item \textbf{Shift} + kleurenpallet klik  = rand kleur
+			\end{itemize}
+		}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Objecten draaien en transformeren}
+		\only<1>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/objecten_draaien_en_transformeren}
+			\end{center}
+		}
+		\only<2>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/inkscape_objecten_draaien_en_transformeren}
+			\end{center}
+		}
+		\only<3>{
+			Ieder object heeft zijn eigen specifieke vervormings eigenschappen, beschikbaar via het object gereedschap
+			
+			\vspace{0.5cm}
+			\textbf{Extra's:}
+			\begin{itemize}
+				\item \textbf{Ctrl} + vervormen = behoud van aspect ratio
+				\item \textbf{Shift} + vervormen = schalen rond middelpunt
+				\item \textbf{Ctrl} + \textbf{Shift} + vervormen = combinatie van bovenstaande
+				\item \textbf{Ctrl} + draaien = draaien met stappen van 15$^\circ$
+				\item \textbf{Ctrl} + slepen = horizontaal of verticaal slepen
+				\item slepen + \textbf{spatie} = object dupliceren en plaatsen
+			\end{itemize}
+		}
+		
 	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
@@ -101,10 +165,16 @@
 	\begin{frame}
 		\footnotesize
 		\vspace{4cm}
+		\includegraphics[height=0.3cm]{fig/cc} 
+		\includegraphics[height=0.3cm]{fig/by} 
+		\includegraphics[height=0.3cm]{fig/sa} 
+		\quad \the\year\ Brecht Baeten
+		\vspace{0.5cm}
+		
     	Dit werk is gelicenseerd onder de licentie Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal. Ga naar http://creativecommons.org/licenses/by-sa/4.0/ om een kopie van de licentie te kunnen lezen.
     	
     	\vspace{0.5cm}
-    	De bron van dit document is beschikbaar op https://github.com/BrechtBa/inleiding-tot-inkscape
+    	De bron van dit document en alle tekeningen zijn beschikbaar op https://github.com/BrechtBa/inleiding-tot-inkscape
 	\end{frame}	
 	
 \end{document}
