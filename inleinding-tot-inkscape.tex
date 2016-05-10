@@ -63,17 +63,19 @@
 	\begin{frame}
 		\frametitle{Objecten}
 		\begin{columns}
-			\begin{column}[T]{0.5\textwidth}
+			\begin{column}[T]{0.6\textwidth}
 				\begin{itemize}
-					\item Rechthoek
-					\item 3D doos
-					\item Cirkel
-					\item Veelhoek / ster
-					\item Spiraal
-					\item Tekst
+					\item Rechthoek / 3D doos / Cirkel / Veelhoek / ster / Spiraal / Tekst
+					\item Gereedschap selecterer en slepen
+				\end{itemize}
+				\begin{itemize}
+					\item Vulling en lijn pallet openen via \emph{Object $>$ Vulling en lijn...}\\
+					 of \textbf{Ctrl} + \textbf{Shift} + F\\
+					 of dubbelklikken op vulling en lijn detail (links onderaan)
+					\item Vulling, Lijnkleur, Lijnstijl
 				\end{itemize}
 			\end{column}
-			\begin{column}[T]{0.5\textwidth}
+			\begin{column}[T]{0.4\textwidth}
 				\includegraphics[height=0.8\textheight]{fig/inkscape_objecten}
 			\end{column}
 		\end{columns}
@@ -87,15 +89,7 @@
 			\end{center}
 		}
 		\only<2>{
-			\begin{itemize}
-				\item Vulling en lijn pallet openen via \emph{Object $>$ Vulling en lijn...}\\
-				 of \textbf{Ctrl} + \textbf{Shift} + F\\
-				 of dubbelklikken op vulling en lijn detail (links onderaan)
-				\item Vulling, Lijnkleur, Lijnstijl
-			\end{itemize}
-			
-			\vspace{0.5cm}
-			\textbf{Extra's:}
+			\textbf{Tips:}
 			\begin{itemize}
 				\item kleurenpallet klik = vulling kleur
 				\item \textbf{Shift} + kleurenpallet klik  = rand kleur
@@ -106,23 +100,34 @@
 	\begin{frame}
 		\frametitle{Objecten draaien en transformeren}
 		\only<1>{
-			\begin{center}
-				\includegraphics[height=0.8\textheight]{fig/objecten_draaien_en_transformeren}
-			\end{center}
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Selectie gereedschap
+						\item Vergroten / Verkleinen
+						\item Draaien
+						\item Scheeftrekken
+						\item Verplaatsbaar referentiepunt
+					\end{itemize}
+					\begin{itemize}
+						\item Ieder object heeft zijn eigen specifieke vervormings eigenschappen, beschikbaar via het object gereedschap
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_objecten_draaien_en_transformeren}
+				\end{column}
+			\end{columns}
 		}
 		\only<2>{
 			\begin{center}
-				\includegraphics[height=0.8\textheight]{fig/inkscape_objecten_draaien_en_transformeren}
-			\end{center}
+				\includegraphics[height=0.8\textheight]{fig/objecten_draaien_en_transformeren}
+			\end{center}	
 		}
 		\only<3>{
-			Ieder object heeft zijn eigen specifieke vervormings eigenschappen, beschikbaar via het object gereedschap
-			
-			\vspace{0.5cm}
-			\textbf{Extra's:}
+			\textbf{Tips:}
 			\begin{itemize}
 				\item \textbf{Ctrl} + vervormen = behoud van aspect ratio
-				\item \textbf{Shift} + vervormen = schalen rond middelpunt
+				\item \textbf{Shift} + vervormen = schalen rond referentiepunt
 				\item \textbf{Ctrl} + \textbf{Shift} + vervormen = combinatie van bovenstaande
 				\item \textbf{Ctrl} + draaien = draaien met stappen van 15$^\circ$
 				\item \textbf{Ctrl} + slepen = horizontaal of verticaal slepen
@@ -133,9 +138,102 @@
 	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
-		\frametitle{Paden}
+		\frametitle{Objecten vs. Paden}
 		
+		\vspace{-0.5cm}
+		\hfill \includegraphics[width=0.2\textwidth]{fig/rechthoek_object}\\
+		\vspace{-0.3cm}
+		\includegraphics[height=2.5cm]{fig/rechthoek_object_bron.png}
+		
+		\hfill \includegraphics[width=0.2\textwidth]{fig/rechthoek_pad}\\
+		\vspace{-0.3cm}
+		\includegraphics[height=2.5cm]{fig/rechthoek_pad_bron.png}	
 	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Paden}	
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Losse hand tekenen
+						\item Rechten / Bezier krommen / Splines
+					\end{itemize}
+					\begin{itemize}
+						\item Van punt tot punt klikken voor een gebroken lijn
+						\item Klikken en slepen voor een vloeiende lijn
+						\item Dubbelklik om te eindigen
+						\item Rechter muis klik om bij het vorige punt te stoppen
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_paden}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Pad bewerken gereedschap
+					\end{itemize}
+					\begin{itemize}
+						\item Nodes toevoegen / verwijderen
+						\item Nodes samenvoegen / uiteen halen
+						\item Nodes verbinden met een lijn
+						\item Lijn tussen nodes verwijderen
+					\end{itemize}
+					\begin{itemize}
+						\item Nodes slepen
+						\item Node type (hoekig / glad / symmetrisch / auto)
+						\item Node handvaten
+					\end{itemize}
+					\begin{itemize}
+						\item Lijn vs. Curve
+						\item Object naar pad
+						\item Lijn (met dikte) naar pad
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_paden_bewerken}
+				\end{column}
+			\end{columns}
+		}
+		\only<3>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/paden}
+			\end{center}
+		}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Pad operaties}
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Elementaire bewerkingen op paden
+					\end{itemize}
+					\begin{itemize}
+						\item Vereniging
+						\item Verschil
+						\item Overlap
+						\item Uitsluiting
+						\item Splitsing
+						\item Snijden
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_pad_operaties}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/pad_operaties}
+			\end{center}
+		}
+	\end{frame}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Document eigenschappen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,11 +250,6 @@
 	\section{Afbeeldingen importeren}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Paden bewerken}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
