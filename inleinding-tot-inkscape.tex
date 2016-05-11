@@ -184,9 +184,7 @@
 						\item Lijn tussen nodes verwijderen
 					\end{itemize}
 					\begin{itemize}
-						\item Nodes slepen
-						\item Node type (hoekig / glad / symmetrisch / auto)
-						\item Node handvaten
+						\item Node type\\ (hoekig/glad/symmetrisch/auto)
 					\end{itemize}
 					\begin{itemize}
 						\item Lijn vs. Curve
@@ -237,15 +235,86 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Document eigenschappen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\section{Templates}
+	\begin{frame}
+		\frametitle{Pagina afmetingen}
+		\begin{center}
+			\includegraphics[height=0.8\textheight]{fig/inkscape_documenteigenschappen}
+		\end{center}	
+	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
+	\begin{frame}
+		\frametitle{Sjablonen}
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Verschillende paginagroottes, standaard eenheden, linealen,...
+					\end{itemize}
+					\begin{itemize}
+						\item Zelf templates opslaan in\\ \emph{'inkscape dir'/share/templates/}
+						\item Wanneer inkscape start wordt \emph{default.svg} of \emph{default.nl.svg} geladen
+					\end{itemize}
+					
+					\vspace{1cm}
+					Maak een A4 document met eenheden in mm en gebruik dit als default.
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_sjablonen}
+				\end{column}
+			\end{columns}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\section{Rasters en hulplijnen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Rasters}
+		\begin{center}
+			\includegraphics[height=0.8\textheight]{fig/inkscape_documenteigenschappen_rasters}
+		\end{center}	
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Hulplijnen}
+		\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Vanaf een lineaal slepen
+						\item Slepen om te verplaatsen
+						\item \textbf{Shift} + slepen om te draaien
+						\item Dubbelklikken om meer gedetailleerde instellingen te wijzigen
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_hulplijnen}
+				\end{column}
+			\end{columns}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Kleven}
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Objecten, knooppunten en paden kunnen aan elkaar, rasters, hulplijnen,... kleven 
+						\item Via kleven toolbar kiezen wat kleeft
+					\end{itemize}
+					\begin{itemize}
+						\item Kleven aan knooppunten voor gesloten paden
+						\item Kleven aan raster voor rechthoekige voorwerpen
+						\item Kleven aan hulplijnen voor lijnen onder hoeken
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_kleven}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/raster_hulplijnen_paden}
+			\end{center}
+		}
+	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 	\section{Afbeeldingen importeren}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
