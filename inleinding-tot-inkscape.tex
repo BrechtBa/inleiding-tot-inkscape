@@ -6,14 +6,6 @@
 \begin{document}
 	\frame{\titlepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Inleiding}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}
-		\frametitle{Voorbeelden}
-		%\center
-    	%\includegraphics[height=0.7\textheight{fig/inleiding/building_neighbourhood_cfd}\\
-	\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Vector graphics}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
@@ -66,13 +58,13 @@
 			\begin{column}[T]{0.6\textwidth}
 				\begin{itemize}
 					\item Rechthoek / 3D doos / Cirkel / Veelhoek / ster / Spiraal / Tekst
-					\item Gereedschap selecterer en slepen
+					\item Gereedschap selecteren en slepen
 				\end{itemize}
 				\begin{itemize}
 					\item Vulling en lijn pallet openen via \emph{Object $>$ Vulling en lijn...}\\
 					 of \textbf{Ctrl} + \textbf{Shift} + F\\
 					 of dubbelklikken op vulling en lijn detail (links onderaan)
-					\item Vulling, Lijnkleur, Lijnstijl
+					\item Vulling kleur, Lijnkleur, Lijndikte, Lijnstijl
 				\end{itemize}
 			\end{column}
 			\begin{column}[T]{0.4\textwidth}
@@ -84,15 +76,46 @@
 	\begin{frame}
 		\frametitle{Objecten en kleuren}
 		\only<1>{
-			\begin{center}
-				\includegraphics[height=0.8\textheight]{fig/objecten_en_kleuren}
-			\end{center}
-		}
-		\only<2>{
 			\textbf{Tips:}
 			\begin{itemize}
 				\item kleurenpallet klik = vulling kleur
 				\item \textbf{Shift} + kleurenpallet klik  = rand kleur
+			\end{itemize}
+		}
+		\only<2>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/objecten_en_kleuren}
+			\end{center}
+		}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Objecten selecteren, verplaatsen en dupliceren}
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Selectie gereedschap
+						\item Aanklikken of volledig rond slepen om een object te selecteren
+					\end{itemize}
+					\begin{itemize}
+						\item Object selecteren en slepen om te verplaatsen
+					\end{itemize}
+					\begin{itemize}
+						\item \emph{Bewerken $>$ Dupliceren}
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_selectie_gereedschap}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\textbf{Tips:}
+			\begin{itemize}
+				\item \textbf{Ctrl} + D = dupliceren
+				\item \textbf{Ctrl} + slepen = horizontaal of verticaal slepen
+				\item slepen + \textbf{spatie} = object dupliceren en plaatsen (stempelen)
 			\end{itemize}
 		}
 	\end{frame}
@@ -103,8 +126,11 @@
 			\begin{columns}
 				\begin{column}[T]{0.6\textwidth}
 					\begin{itemize}
-						\item Selectie gereedschap
+						\item Selecteren om te: 
 						\item Vergroten / Verkleinen
+					\end{itemize}
+					\begin{itemize}
+						\item nog eens klikken om te:
 						\item Draaien
 						\item Scheeftrekken
 						\item Verplaatsbaar referentiepunt
@@ -130,11 +156,44 @@
 				\item \textbf{Shift} + vervormen = schalen rond referentiepunt
 				\item \textbf{Ctrl} + \textbf{Shift} + vervormen = combinatie van bovenstaande
 				\item \textbf{Ctrl} + draaien = draaien met stappen van 15$^\circ$
-				\item \textbf{Ctrl} + slepen = horizontaal of verticaal slepen
-				\item slepen + \textbf{spatie} = object dupliceren en plaatsen
+			\end{itemize}
+		}	
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Objecten groeperen en volgorde}
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Meerdere objecten selecteren met \textbf{Shift} + klik of door een kader errond te slepen
+						\item Groeperen / groep opheffen
+					\end{itemize}
+					\begin{itemize}
+						\item Gegroepeerde objecten gedragen zich als één object
+						\item Schalen
+						\item Roteren
+						\item Scheeftrekken
+					\end{itemize}
+					\begin{itemize}
+						\item Volgorde van overlappende objecten aanpassen met \textbf{PageUp} \textbf{PageDown}
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_objecten_groeperen}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\textbf{Tips:}
+			\begin{itemize}
+				\item \textbf{Ctrl} + G = Groeperen
+				\item \textbf{Ctrl} + \textbf{Shift} + G = Groep opheffen
+				\item Dubbelklikken op een groep is de groep bewerken
+				\item \textbf{Ctrl} + klikken = één object uit een groep selecteren om te bewerken
+				\item \textbf{Alt} + klikken = onderliggende objecten selecteren
 			\end{itemize}
 		}
-		
 	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
@@ -178,13 +237,13 @@
 						\item Pad bewerken gereedschap
 					\end{itemize}
 					\begin{itemize}
-						\item Nodes toevoegen / verwijderen
-						\item Nodes samenvoegen / uiteen halen
-						\item Nodes verbinden met een lijn
-						\item Lijn tussen nodes verwijderen
+						\item Knopen toevoegen / verwijderen
+						\item Knopen samenvoegen / uiteen halen
+						\item Knopen verbinden met een lijn
+						\item Lijn tussen Knopen verwijderen
 					\end{itemize}
 					\begin{itemize}
-						\item Node type\\ (hoekig/glad/symmetrisch/auto)
+						\item Knooppunt type\\ (hoekig/glad/symmetrisch/auto)
 					\end{itemize}
 					\begin{itemize}
 						\item Lijn vs. Curve
@@ -318,18 +377,92 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 	\section{Afbeeldingen importeren}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-
-
-
+	\begin{frame}
+		\frametitle{Importeren}
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Bitmaps importeren
+					\end{itemize}
+					\begin{itemize}
+						\item Kleven aan knooppunten voor gesloten paden
+						\item Kleven aan raster voor rechthoekige voorwerpen
+						\item Kleven aan hulplijnen voor lijnen onder hoeken
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_importeren}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\begin{itemize}
+				\item Bijsnijden van bitmaps (of andere figuren) moet via een omweg in inkscape
+			\end{itemize}
+			\begin{itemize}
+				\item Maak een object in de vorm die je wil overhouden en zit dit over je figuur
+				\item Selecteer beide objecten
+				\item Ga naar \emph{Object $>$ Maskerpad $>$ Instellen}
+			\end{itemize}
+			
+			\begin{center}
+				\includegraphics[height=0.5\textheight]{fig/bijsnijden}
+			\end{center}
+		}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Bitmap overtrekken}
+		\only<1>{
+			\begin{columns}
+				\begin{column}[T]{0.6\textwidth}
+					\begin{itemize}
+						\item Bitmap figuur omzetten naar een Vector figuur
+						\item Vaak veel handmatige correcties nodig
+						\item Soms is de tekening handmatig omlijnen sneller
+					\end{itemize}
+					\begin{itemize}
+						\item Verschillende algoritmes
+						\item Helderheid: 1/3 (R+B+G) $<$ x \qquad vaak de beste keuze
+						\item Randherkenning: lijnen met gelijke verandering in contrast
+						\item Kleurmeting: lijnen met gelijke verandering in kleur
+					\end{itemize}
+				\end{column}
+				\begin{column}[T]{0.4\textwidth}
+					\includegraphics[height=0.8\textheight]{fig/inkscape_bitmap_overtrekken}
+				\end{column}
+			\end{columns}
+		}
+		\only<2>{
+			\begin{center}
+				\includegraphics[height=0.8\textheight]{fig/bitmap_overtrekken}
+			\end{center}
+		}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\section*{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+		\frametitle{Meer informatie}
+		\begin{itemize}
+			\item In inkscape \emph{Help $>$ Tutorials}
+			\item https://inkscape.org/nl/learn/faq/
+			\item https://inkscape.org/nl/learn/tutorials/
+			\begin{itemize}
+				\item verder klikken op Basic / Advanced / ...
+				\item '.en.' in url vervangen door '.nl.' voor nederlands\\ \qquad .../x/tutorial-x.nl.html 
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	\section*{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}
 		\footnotesize
 		\vspace{4cm}
-		\includegraphics[height=0.3cm]{fig/cc} 
-		\includegraphics[height=0.3cm]{fig/by} 
-		\includegraphics[height=0.3cm]{fig/sa} 
+		\includegraphics[height=0.3cm]{fig/cc} \
+		\includegraphics[height=0.3cm]{fig/by} \
+		\includegraphics[height=0.3cm]{fig/sa}
 		\quad \the\year\ Brecht Baeten
 		\vspace{0.5cm}
 		
